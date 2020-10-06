@@ -1,8 +1,7 @@
-import { hash } from 'bcryptjs';
 import IHashprovider from '../models/IHashProvider';
 
 class FakeHashProvider implements IHashprovider {
-  public async gerenetaHash(payload: string): Promise<string> {
+  public async generateHash(payload: string): Promise<string> {
     return payload;
   }
 
